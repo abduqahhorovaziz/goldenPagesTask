@@ -1,0 +1,32 @@
+.nav__functions {
+  @include flex-all-sb;
+
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  &-right {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--dark-color);
+  }
+
+  .functions {
+    &__region {
+      color: var(--btn-blue-color);
+      border-bottom: 1px dotted var(--btn-blue-color);
+    }
+
+    &__account {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 20px;
+      color: var(--btn-blue-color);
+      text-decoration: underline;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

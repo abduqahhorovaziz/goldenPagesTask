@@ -1,0 +1,42 @@
+.nav__top {
+  @include flex-all-center;
+  min-height: 40px;
+
+  &-container {
+    background-color: var(--dark-color);
+  }
+  &-list {
+    @include flex-all-sb;
+    width: 100%;
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    position: relative;
+
+    &-vline {
+      position: absolute;
+      right: -20px;
+      top: 3px;
+    }
+
+    .nav__link{
+      font-weight: 300;
+      font-size: 13px;
+      font-style: unset;
+      line-height: 20px;
+      color: var(--top-header-text-color);
+      transition: 0.3s ease;
+
+      svg {
+        margin-left: 9px;
+      }
+
+      &:hover {
+        color: var(--light-color);
+      }
+    }
+  }
+}
